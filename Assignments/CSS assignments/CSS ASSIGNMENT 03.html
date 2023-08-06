@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .one{
+            height: 500px;
+            width: 1400px;
+            background-color: aquamarine;
+            display: flex;
+
+        }
+        .two{
+            height: inherit;
+            width: 50%;
+            background-color: #202020;
+            position: relative;
+        }
+        .two1{
+            font-size: 40px;
+            letter-spacing: 4px;
+            color: #f4f5f9;
+            font-weight: 700;
+            font-family: "Source Sans Pro";
+            text-align: right;
+            position: absolute;
+            right: 135px;
+        }
+        .xyz{
+            width: 6px;
+            height: 36px;
+            background-color: #e74c3c;
+            text-align: right;
+            position: absolute;
+            bottom: 400px;
+            right: 114px;
+        }
+        .two2{
+            width: 587px;
+            height: 74px;
+            font-size: 18px;
+            line-height: 29px;
+            color: #e74c3c;
+            font-weight: 600;
+            font-family: "Open Sans";
+            text-align: right;
+            position: absolute;
+            bottom: 285px;
+            right: 114px;
+        }
+        .two3{
+            width: 587px;
+            height: 74px;
+            font-size: 14px;
+            line-height: 29px;
+            color: #999999;
+            font-weight: 400;
+            font-family: "Source Sans Pro";
+            text-align: right;
+            position: absolute;
+            bottom: 260px;
+            right: 114px; 
+        }
+        .two4{
+            width: 587px;
+            height: 74px;
+            font-size: 18px;
+            line-height: 40px;
+            color: #e74c3c;
+            font-weight: 600;
+            font-family: "Open Sans";
+            text-align: right;
+            position: absolute;
+            bottom: 190px;
+            right: 114px;
+        }
+        .two5{
+            width: 587px;
+            height: 74px;
+            font-size: 14px;
+            line-height: 29px;
+            color: #999999;
+            font-weight: 400;
+            font-family: "Source Sans Pro";
+            text-align: right;
+            position: absolute;
+            bottom: 160px;
+            right: 114px; 
+        }
+        .two6{
+            width: 587px;
+            height: 74px;
+            font-size: 18px;
+            line-height: 40px;
+            color: #e74c3c;
+            font-weight: 600;
+            font-family: "Open Sans";
+            text-align: right;
+            position: absolute;
+            bottom: 90px;
+            right: 114px;
+        }
+        .two7{
+            width: 587px;
+            height: 74px;
+            font-size: 14px;
+            line-height: 29px;
+            color: #999999;
+            font-weight: 400;
+            font-family: "Source Sans Pro";
+            text-align: right;
+            position: absolute;
+            bottom: 60px;
+            right: 114px; 
+        }
+        /* -------------------------------- COMPUTER ICON -------------------------------------- */
+        .abc{
+            opacity: 0.251;
+            width: 66px;
+            height: 66px;
+            border-radius: 33px;
+            background-color: #ffffff;
+            position: absolute;
+            right: -33px;
+            bottom: 283px;
+            z-index: 1;
+        }
+        .abc1{
+            width: 28px;
+            height: 36px;
+            border-radius: 0px;
+            color: #e74c3c;
+            position: absolute;
+            right: -18px;
+            bottom: 285px;
+            z-index: 3;
+        }
+        .abc2{
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: #f4f5f9;
+            position: absolute;
+            right: -30px;
+            bottom: 286px;
+            z-index: 2;
+        }
+        /* ----------------------------------- PRINT ICON -------------------------------- */
+        .csk{
+            opacity: 0.251;
+            width: 66px;
+            height: 66px;
+            border-radius: 33px;
+            background-color: #ffffff;
+            position: absolute;
+            right: -33px;
+            bottom: 178px;
+            z-index: 1;
+        }
+        .csk1{
+            width: 28px;
+            height: 36px;
+            border-radius: 0px;
+            color: #e74c3c;
+            position: absolute;
+            right: -20px;
+            bottom: 180px;
+            z-index: 3;
+        }
+        .csk2{
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: #f4f5f9;
+            position: absolute;
+            right: -30px;
+            bottom: 181px;
+            z-index: 2;
+        }
+        /* -------------------------------------------CAMERA ICON ------------------------------------- */
+        .rcb{
+            opacity: 0.251;
+            width: 66px;
+            height: 66px;
+            border-radius: 33px;
+            background-color: #ffffff;
+            position: absolute;
+            right: -33px;
+            bottom: 75px;
+            z-index: 1;
+        }
+        .rcb1{
+            width: 28px;
+            height: 36px;
+            border-radius: 0px;
+            color: #e74c3c;
+            position: absolute;
+            right: -20px;
+            bottom: 79px;
+            z-index: 3;
+        }
+        .rcb2{
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: #f4f5f9;
+            position: absolute;
+            right: -30px;
+            bottom: 78px;
+            z-index: 2;
+        }
+        /* ----------------------------------------- NAV ---------------------------------------------- */
+        .mi{
+            opacity: 0.400;
+            width: 2px;
+            height: 30px;
+            background-color: #45576e;
+            border: 1px solid #999999;
+            position: absolute;
+            left: 10px;
+            top: 170px;
+        }
+        .mi1{
+            width: 2px;
+            height: 30px;
+            background-color: #45576e;
+            border: 2px solid #e74c3c;
+            position: absolute;
+            left: 10px;
+            top: 210px;
+        }
+        .mi2{
+            opacity: 0.400;
+            width: 2px;
+            height: 30px;
+            background-color: #45576e;
+            border: 1px solid #999999;
+            position: absolute;
+            left: 10px;
+            top: 250px;
+        }
+        /* ------------------------------------------------------------------------------------------------ */
+        .three{
+            height: inherit;
+            width: 50%;
+            background-color:burlywood;
+        }
+        .zxc{
+            height: 500px;
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="two">
+            <p class="two1">OUR SERVICES</p>
+            <p class="xyz"></p>
+            <p class="two2">WEB DESIGN</p>
+            <p class="two3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae facilis, libero deserunt praesentium omnis iusto.</p>
+            <p class="two4">PRINT DESIGN</p>
+            <p class="two5">lorem ipsum dolor,sit amet adipisicing elit. quae, illo magni inventore quam est! Optio, incidunt adipisci! Nemo.</p>
+            <p class="two6">PHOTOGRAPHY</p>
+            <p class="two7">Lorem ipsum dolor sit amet consectetur  elit. Reprehenderit porro fugiat vero omnis optio enim quibusdam, harum illum iusto.</p>
+
+            <!-- ------------------------------------------------ICON----------------------------------------- -->
+            <p class="abc"></p>
+            <p class="abc1"><i class="fa-solid fa-desktop"></i></p>
+            <p class="abc2"></p>
+            
+            <p class="csk"></p>
+            <p class="csk1"><i class="fa-solid fa-print"></i></p>
+            <p class="csk2"></p>
+
+            <p class="rcb"></p>
+            <p class="rcb1"><i class="fa-solid fa-camera"></i></p>
+            <p class="rcb2"></p>
+            <!-- ------------------------------------------------------NAV------------------------------------------------ -->
+            <p class="mi"></p>
+            <p class="mi1"></p>
+            <p class="mi2"></p>
+
+        </div>
+        <div class="three">
+            <img src="C:\Users\makavana tushar\Downloads\Put Your Image.png" alt="" class="zxc">
+        </div>
+    </div>
+</body>
+</html>
