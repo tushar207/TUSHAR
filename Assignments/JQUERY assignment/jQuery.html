@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("span").parents().css({"border":"2px solid red"})
+            $("span").parents().css({"color":"red"})
+        })
+    </script>
+
+    <style>
+        body *{
+            border: 2px solid black;
+            padding: 15px;
+            display: block;
+        }
+        div{
+            margin: 20px 50px;
+            width: 600px;
+        }
+    </style>
+
+</head>
+<body>body (gret-gret-grandparen)
+    <div>div (gret-grandparent)
+        <ul>ul (grandparent)
+            <li>li (direct-parent) <br>
+                <span>span</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
