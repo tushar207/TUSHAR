@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center"><u>Student registration form</u></h1>
+        <legend>Form</legend>
+        <form action="C:\Users\makavana tushar\Pictures\Saved Pictures\Angry.png" method="post" onsubmit="return ValidData()">
+        <table cellspacing="10">
+          
+                <tr>
+                    <td>First name</td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                <td><input type="text" id="pass"></td>
+                </tr>
+                <tr>
+                    <td >Email</td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Mobile number</td>
+                    <td><input type="number" id="number"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="submit" value="submit"></td>
+                </tr>
+                    </form>
+        </table>
+    <script>
+        function ValidData()
+        {
+            var fname = document.getElementById('name').value;
+            if(name == "")
+            {
+                alert("enter your first name");
+                document.getElementById('name').focus();
+                return false;
+            }
+            var password = document.getElementById('pass').value;
+            if(name == "")
+            {
+                alert("enter your password");
+                document.getElementById('pass').focus();
+                return false;
+            }
+            var email = document.getElementById('email').value;
+            if(name == "")
+            {
+                alert("enter your email");
+                document.getElementById('email').focus();
+                return false;
+            }
+            var number = document.getElementById('number').value;
+            if(name == "")
+            {
+                alert("enter your number");
+                document.getElementById('number').focus();
+                return false;
+            }
+        }
+    </script>
+    
+</body>
+</html>
