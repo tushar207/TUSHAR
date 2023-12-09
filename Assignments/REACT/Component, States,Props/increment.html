@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>State Change</title>
+  <style>
+    #incrementBtn{
+        height: 30px;
+        color: white;
+        background-color: green;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    #decrementBtn{
+        height: 30px;
+        color: white;
+        background-color: red;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    #resetBtn{
+        height: 30px;
+        color: black;
+        background-color: rgba(200, 0, 255, 0.196);
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  <p>Value: <span id="value">0</span></p>
+  
+  <button id="incrementBtn">Increment</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button id="decrementBtn">Decrement</button><br><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="resetBtn">Reset</button>
+
+  <script>
+    // Get the value element
+    const valueElement = document.getElementById('value');
+
+    // Initial value
+    let value = 0;
+    valueElement.textContent = value;
+
+    // Increment function
+    document.getElementById('incrementBtn').addEventListener('click', function() {
+      value++;
+      valueElement.textContent = value;
+    });
+
+    // Decrement function
+    document.getElementById('decrementBtn').addEventListener('click', function() {
+      value--;
+      valueElement.textContent = value;
+    });
+
+    // Reset function
+    document.getElementById('resetBtn').addEventListener('click', function() {
+      value = 0;
+      valueElement.textContent = value;
+    });
+  </script>
+</body>
+</html>
